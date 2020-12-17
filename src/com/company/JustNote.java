@@ -10,7 +10,6 @@ public class JustNote extends Note {
 
     @Override
     public void share() {
-
     }
 
     @Override
@@ -21,7 +20,5 @@ public class JustNote extends Note {
                 "Рейтинг: " + this.getLikeCount() + "\n" +
                 "Избранное: " + this.getShareCount() + "\n";
         System.out.println(stringBuilder);
-
     }
-
 }

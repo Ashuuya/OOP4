@@ -77,7 +77,6 @@ public class mainmenu {
                         System.out.println("Нет такой заметки!");
                     break;
                 case 5:
-
                     System.out.print("ID заметки: ");
                     id = readInt();
                     srcPost = dialog.getPost(id);
@@ -117,6 +116,4 @@ public class mainmenu {
         }
         return readed;
     }
-
-    }
-
+}

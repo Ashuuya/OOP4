@@ -6,28 +6,28 @@ public abstract class Note {
     protected String content;
     protected int likeCount;
     protected static int shareCount;
+    protected int id;
 
     public int getId() {
         return id;
     }
 
-    protected int id;
-
     public String getAuthorName() {
         return authorName;
     }
 
-    public String getContent() {
-        return content;
-    }
+    public String getContent() {return content;}
 
     public int getLikeCount() {
         return likeCount;
     }
 
-
     public int getShareCount() {
         return shareCount;
+    }
+
+    public void like(){
+        likeCount++;
     }
 
     public Note(){
@@ -36,10 +36,5 @@ public abstract class Note {
     }
 
     public abstract void share();
-
-    public void like(){
-        likeCount++;
-    }
     public abstract void print();
-
 }
